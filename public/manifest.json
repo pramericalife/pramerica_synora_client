@@ -2,20 +2,24 @@
   "name": "Neuron Meet",
   "short_name": "Neuron Meet",
   "description": "Video Conferencing Made Simple - Free, secure video calls for teams and individuals",
-  "start_url": "/",
+  "start_url": "/synora/",
   "display": "standalone",
   "background_color": "#f3efe7",
   "theme_color": "#20378a",
   "orientation": "any",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/synora/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ],
-  "categories": ["productivity", "business", "communication"],
+  "categories": [
+    "productivity",
+    "business",
+    "communication"
+  ],
   "screenshots": [],
   "prefer_related_applications": false
 }

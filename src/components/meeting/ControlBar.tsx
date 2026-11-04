@@ -157,7 +157,7 @@ export default function ControlBar({
       return;
     }
 
-    const link = `${window.location.origin}/join/${roomCode}`;
+    const link = `${window.location.origin}${import.meta.env.BASE_URL}join/${roomCode}`;
 
     try {
       await navigator.clipboard.writeText(link);

@@ -6,14 +6,15 @@ import path from "node:path";
 const certDir = path.resolve(__dirname, "certs");
 const https =
   fs.existsSync(path.join(certDir, "lan.pem")) &&
-  fs.existsSync(path.join(certDir, "lan-key.pem"))
+    fs.existsSync(path.join(certDir, "lan-key.pem"))
     ? {
-        cert: fs.readFileSync(path.join(certDir, "lan.pem")),
-        key: fs.readFileSync(path.join(certDir, "lan-key.pem")),
-      }
+      cert: fs.readFileSync(path.join(certDir, "lan.pem")),
+      key: fs.readFileSync(path.join(certDir, "lan-key.pem")),
+    }
     : undefined;
 
 export default defineConfig({
+  base: "/synora/",
   plugins: [react()],
   resolve: {
     alias: {
